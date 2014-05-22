@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>预订 - ThinkPHP demo</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/basic.css" />
+    <script type="application/javascript" src="__PUBLIC__/Js/basic.js"></script>
+</head>
+<body>
+    <form action="__URL__/add" method="post" name="bookForm">
+        <input type="hidden" name="menuId" value="<{$book.menu_id}>" />
+        <table>
+            <tr>
+                <td>餐名：</td>
+                <td><{$book.menu_name}></td>
+            </tr>
+            <tr>
+                <td>份数：</td>
+                <td><input type="number" value="1" name="num" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="预订"/></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

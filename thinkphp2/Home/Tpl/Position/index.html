@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>区域 - ThinkPHP demo</title>
+    <link rel="stylesheet" type="text/css" href="__CSS__/basic.css" />
+    <script type="application/javascript" src="__JS__/Js/basic.js"></script>
+</head>
+<body>
+<h2>请选择你所在的区域 - 订餐</h2>
+<table class="form">
+    <tr>
+        <td>区域</td>
+        <td></td>
+    </tr>
+    <volist name='data' id='vo'>
+        <tr>
+            <td><{$vo.place_name}></td>
+            <td><a href="__APP__/Store/index/id/<{$vo.place_id}>">去店面</a></td>
+        </tr>
+    </volist>
+</table>
+</body>
+</html>
